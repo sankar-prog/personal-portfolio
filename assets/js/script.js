@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       emailjs.send("service_dn7wg9j", "template_7jkqwfo", formData)
           .then(() => {
-              
+              alert('message sended successfully')
               this.reset();
           })
           .catch((error) => {

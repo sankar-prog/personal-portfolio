@@ -157,3 +157,25 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("D0HufYlAV9N6r4GLo"); // Initialize EmailJS
+
+  document.querySelector(".form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = {
+          fullname: document.getElementById("name").value,
+          email: document.getElementById("mail").value,
+          message: document.getElementById("message").value,
+      };
+
+      emailjs.send("service_dn7wg9j", "template_7jkqwfo", formData)
+          .then(() => {
+              
+              this.reset();
+          })
+          .catch((error) => {
+              alert("Failed to send message: " + error.text);
+          });
+  });
+});

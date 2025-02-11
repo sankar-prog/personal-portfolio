@@ -7,4 +7,4 @@ Features:
 ✅ Showcases projects & skills
 ✅ Contact form for collaboration
 
-Check it out live: [https://sanxxr.vercel.app/] ✨
+Check it out live:https://dev-sankar.pages.dev ✨
